@@ -1,7 +1,29 @@
 aid: fixed
-name: fixed
-description: fixed is a company surfaced as a portfolio company of slow-ventures and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/fixed.png
+name: Fixed
+description: >-
+  Fixed (fixed.com.au) is a Brisbane, Australia based construction, refurbishment
+  and facility-maintenance company specialising in the childcare sector. The
+  business delivers centre refurbishments, reactive and preventative maintenance,
+  emergency repairs, landscaping and outdoor play-space (yard) services for
+  childcare and early-learning facilities across Australia, with licensed and
+  inducted teams and 24/7 after-hours availability. It is a services trades
+  business with a WordPress marketing website and no public developer program,
+  API, SDK, or machine-readable surface. This entry was auto-created as a stub
+  from a venture-portfolio match; that match is almost certainly a domain/name
+  collision (see x-notes) and the profile is retained here as an enriched,
+  no-API-surface company record.
 url: https://raw.githubusercontent.com/api-evangelist/fixed/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +31,24 @@ x-backed-by:
 - slow-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-notes: >-
+  Enrichment 2026-07-19: fixed.com.au resolves to an Australian childcare-facility
+  construction/maintenance company, not a technology/API startup. The original
+  slow-ventures portfolio association is unverified and appears to be a
+  domain/name collision. No API, OpenAPI, SDK, MCP, llms.txt, or .well-known
+  documents exist. Real artifacts captured: a domain-security probe (TLS 1.3, SPF,
+  DMARC p=none; no HSTS/DNSSEC/CAA) and a well-known probe index (all 404).
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Construction
+- Facility Management
+- Maintenance
+- Childcare
+- Australia
+- Trades Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +58,16 @@ maintainers:
 common:
 - type: Website
   url: https://fixed.com.au
+- type: Services
+  url: https://www.fixed.com.au/services/
+- type: Support
+  url: https://www.fixed.com.au/contact-us/
+- type: DomainSecurity
+  url: security/fixed-domain-security.yml
+- type: WellKnown
+  url: well-known/fixed-well-known.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

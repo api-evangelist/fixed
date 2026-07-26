@@ -1,0 +1,44 @@
+generated: '2026-07-19'
+method: probed
+source: live HTTP probes of https://fixed.com.au and https://www.fixed.com.au
+note: >-
+  fixed.com.au is a WordPress marketing site for a childcare-facility
+  construction/maintenance company. The apex host 301-redirects to www, which
+  returns 404 for every probed .well-known path. No well-known documents were
+  found; absence is a valid, expected result.
+hosts:
+- host: fixed.com.au
+  paths:
+  - path: /.well-known/security.txt
+    status: 301
+    redirects_to: https://www.fixed.com.au/.well-known/security.txt
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 301
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+    file: null
+  - path: /.well-known/api-catalog
+    status: 301
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 301
+    file: null
+- host: www.fixed.com.au
+  paths:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null

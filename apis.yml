@@ -38,7 +38,7 @@ x-notes: >-
   domain/name collision. No API, OpenAPI, SDK, MCP, llms.txt, or .well-known
   documents exist. Real artifacts captured: a domain-security probe (TLS 1.3, SPF,
   DMARC p=none; no HSTS/DNSSEC/CAA) and a well-known probe index (all 404).
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
